@@ -10,8 +10,8 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 1rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); font-size: 1rem;}
   </style>
 </head>
 <body>
@@ -23,16 +23,19 @@
         </div>
         <div class="nav-items">
           <div class="hamburger">
-            <img src="./images/icon-hamburger.svg" alt="">
+            <img id="ham-open" src="./images/icon-hamburger.svg" alt="">
+            <img id="ham-close" src="./images/icon-close.svg" alt="">
           </div>
-          <ul>
+          <ul id="menu">
             <li><a href="#">How we work</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Account</a></li>
-            <li><a href="#">View plans</a></li>
+            <li><a href="#" id="nav-btn">View plans</a></li>
           </ul>
         </div>
       </nav>
+    </div>
+    <div class="container-wrapper hero-container">
       <div class="hero">
         <div class="hero-left">
           <h1>Humanizing your insurance</h1>
@@ -53,45 +56,44 @@
   </header>
   <!-- main part starting with were different sections -->
   <main>
-    <div class="container-wrapper">
-      <section>
-        <h1>We’re different</h1>
-        <div class="perks">
-          <div class="perk">
-            <img src="./images/icon-snappy-process.svg" alt="">
-            <h2>Snappy Process</h2>
-            <p>
-              Our application process can be completed in minutes, not hours. Don’t get 
-              stuck filling in tedious forms.
-            </p>
-          </div>
-          <div class="perk">
-            <img src="./images/icon-affordable-prices.svg" alt="">
-            <h2>Affordable Prices</h2>
-            <p>
-              We don’t want you worrying about high monthly costs. Our prices may be low, 
-              but we still offer the best coverage possible.
-            </p>
-          </div>
-          <div class="perk">
-            <img src="./images/icon-people-first.svg" alt="">
-            <h2>People First</h2>
-            <p>
-              Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-              sure you’re covered when you need it.
-            </p>
-          </div>
+    <section class="different">
+      <hr>
+      <h1>We’re different</h1>
+      <div class="perks">
+        <div class="perk">
+          <img src="./images/icon-snappy-process.svg" alt="">
+          <h2>Snappy Process</h2>
+          <p>
+            Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.
+          </p>
         </div>
-      </section>
-      <section>
-        <h1>
-          Find out more about how we work
-        </h1>
-        <div class="section btn">
-          <a href="#">How we work</a>
+        <div class="perk">
+          <img src="./images/icon-affordable-prices.svg" alt="">
+          <h2>Affordable Prices</h2>
+          <p>
+            We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.
+          </p>
         </div>
-      </section>
-    </div>
+        <div class="perk">
+          <img src="./images/icon-people-first.svg" alt="">
+          <h2>People First</h2>
+          <p>
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <h1>
+        Find out more about how we work
+      </h1>
+      <div class="section-btn">
+        <a href="#">How we work</a>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="container-wrapper">
@@ -125,10 +127,12 @@
             <p>help me</p>
           </div>
           <div class="foot-content">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">terms of service</a></li>
-            <li><a href="#">Privacy policy/a></li>
-            <li><a href="#">cookies</a></li>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">cookies</a></li>
+            </ul>
           </div>
         </div>
         <div class="foot foot-three">
@@ -136,9 +140,11 @@
             <p>Contact</p>
           </div>
           <div class="foot-content">
-            <li><a href="#">sales</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">live chat</a></li>
+            <ul>
+              <li><a href="#">sales</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">live chat</a></li>
+            </ul>
           </div>
         </div>
         <div class="foot foot-four">
@@ -146,9 +152,11 @@
             <p>Others</p>
           </div>
           <div class="foot-content">
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">press</a></li>
-            <li><a href="#">Licenses/a></li>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">press</a></li>
+              <li><a href="#">Licenses</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -156,7 +164,8 @@
   </footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://twitter.com/tee_script">Nafiu Taiwo</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
