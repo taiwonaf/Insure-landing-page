@@ -360,8 +360,33 @@ footer .foot {
 }
 
 @media (min-width: 700px) {
-    body {
-        
+    .hamburger {
+        display: none;
+    }
+
+    .nav-items ul {
+        display: block;
+        position: static;
+        background-image: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .nav-items ul li {
+        width: auto;
+    }
+
+    .nav-items ul li a {
+        color: var(--Very-Dark-Violet);
+        font-size: 1rem;
+        padding: 1rem;
+        font-weight: 900;
+    }
+
+    #nav-btn {
+        border: 2px solid var(--Very-Dark-Violet);
     }
 
     header {
